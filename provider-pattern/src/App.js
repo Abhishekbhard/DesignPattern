@@ -5,20 +5,33 @@ import { themes } from "./theme";
 import "./style.css";
 
 export const ThemeContext = React.createContext();
-
-function App() {
+function ThemeProvider({ children }) {
   const [theme, setTheme] = useState("dark");
   function toggleTheme() {
     setTheme(theme === "light" ? "dark" : "light");
   }
+  const providerValue = {
+    theme: themes[theme],
+    toggleTheme,
+  };
+  return (
+    <ThemeContext.Provider value={providerValue}>
+      {children}
+    </ThemeContext.Provider>
+  );
+}
+
+function App() {
+  const [theme, setTheme] = useState("dark");
+
   return (
     <div className={`App theme-${theme}`}>
-      <ThemeContext.Provider value={{ theme: themes[theme], toggleTheme }}>
+      <ThemeProvider>
         <>
           <Toggle />
           <List />
         </>
-      </ThemeContext.Provider>
+      </ThemeProvider>
     </div>
   );
 }

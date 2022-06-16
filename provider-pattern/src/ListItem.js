@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "./App";
+import useThemeContext from "./Hooks/useThemeContext";
 
 export default function ListItem() {
-  const theme = useContext(ThemeContext);
+  const theme = useThemeContext();
   return (
     <li style={theme.theme}>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "./App";
+import useThemeContext from "./Hooks/useThemeContext";
 
 const Toggle = () => {
-  const theme = useContext(ThemeContext);
+  const theme = useThemeContext();
   return (
     <label className="switch">
       <input type="checkbox" onClick={theme.toggleTheme} />
