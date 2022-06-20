@@ -1,0 +1,34 @@
+html,
+body {
+  background-color: #232323;
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+}
+
+button {
+  margin: 0 30px !important;
+}
+
+label {
+  color: white;
+}
+
+.Toastify__toast-container {
+  padding: 0;
+  width: 150px;
+}
+
+.Toastify__toast--default {
+  background-color: #171717;
+  color: white;
+  font-size: 12px;
+}
