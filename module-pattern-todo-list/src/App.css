@@ -1,26 +1,24 @@
 html,
 body {
   margin: 0;
+  background-color: #171717;
 }
-.app {
-  width: "100%";
-  margin-top: 20px;
+.App {
   display: flex;
-  align-items: center;
-  align-self: center;
   justify-content: center;
-  flex-direction: column;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem 0;
 }
-.todoItems {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+h1 {
+  font-family: "Roboto";
+  font-weight: lighter;
+  margin-bottom: 50px;
+  color: #fff;
 }
-.remove input {
-  height: 30px;
-  border-radius: 5px;
-  background-color: blue;
-  color: white;
-  border: 0ch;
-  margin-left: 20px;
+.todo-list {
+  padding: 0 3rem;
+}
+li {
+  color: #fff;
 }
