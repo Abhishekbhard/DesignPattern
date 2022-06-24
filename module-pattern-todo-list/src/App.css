@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+}
+.app {
+  width: "100%";
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.todoItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.remove input {
+  height: 30px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  border: 0ch;
+  margin-left: 20px;
+}
