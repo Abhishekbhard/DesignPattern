@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 
-import DogImages from "./compose/DogImages";
+import DogImages from "./hooks/DogImages";
 import "./App.css";
 
 function App() {
