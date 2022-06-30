@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0px;
+}
+
+html,
+body {
+  margin: 0px;
+  background-color: #1e2027;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Avenir Next";
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Avenir Next";
+  font-weight: lighter;
+  color: #fff;
+}
