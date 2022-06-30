@@ -1,25 +1,21 @@
-import logo from "./logo.svg";
 import "./App.css";
-
+const Title = (props) => (
+  <>
+    {props.renderFirstComponent()}
+    {props.renderSecondComponent()}
+    {props.renderThirdComponent()}
+  </>
+);
 function App() {
   return (
     <div className="App">
       <Title
-        render={() => (
-          <h1>
-            <span role="img" aria-label="emoji">
-              ✨
-            </span>
-            I am a render prop!{" "}
-            <span role="img" aria-label="emoji">
-              ✨
-            </span>
-          </h1>
-        )}
+        renderFirstComponent={() => <h1>✨ First render prop! ✨</h1>}
+        renderSecondComponent={() => <h2>🔥 Second render prop! 🔥</h2>}
+        renderThirdComponent={() => <h3>🚀 Third render prop! 🚀</h3>}
       />
     </div>
   );
 }
-const Title = (props) => props.render();
 
 export default App;
