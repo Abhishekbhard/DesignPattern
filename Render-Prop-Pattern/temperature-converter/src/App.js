@@ -1,7 +1,8 @@
 import "./App.css";
 import { useState } from "react";
 
-function Input({ value, handleChange }) {
+function Input({ render }) {
+  cons [value,setValue]=useState("");
   return (
     <input
       type="text"
@@ -13,14 +14,15 @@ function Input({ value, handleChange }) {
 }
 
 function App() {
-  const [value, setValue] = useState("");
 
   return (
     <div className="App">
       <h1>☃️ Temperature Converter 🌞</h1>
-      <Input value={value} handleChange={setValue} />
-      <Kelvin value={value} />
+      <Input render={value=>(<>
+        <Kelvin value={value} />
       <Fahrenheit value={value} />
+      </>)}/>
+     
     </div>
   );
 }
